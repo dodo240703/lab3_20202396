@@ -7,19 +7,19 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="mb-4">Registro de auto</h2>
-    <form th:action="@{/dodo/registrar}" method="post">
+    <h2 class="mb-4">Registro de seguro</h2>
+    <form th:action="@{/dodo/registrarSeguro}" method="post">
         <div class="mb-3">
             <label for="empresaAseguradora" class="form-label">Empresa Aseguradora</label>
             <input type="text" class="form-control" id="empresaAseguradora" name="empresaAseguradora" placeholder="Ingrese el nombre de la empresa aseguradora">
         </div>
         <div class="mb-3">
             <label for="coberturaMaxima" class="form-label">Cobertura Maxima</label>
-            <input type="number" class="form-control" id="coberturaMaxima" name="coberturaMaxima" placeholder="Ingrese la cobertura máxima">
+            <input type="text" class="form-control" id="coberturaMaxima" name="coberturaMaxima" placeholder="Ingrese la cobertura máxima">
         </div>
         <div class="mb-3">
             <label for="tarifa" class="form-label">Tarifa</label>
-            <input type="number" class="form-control" id="tarifa" name="tarifa" placeholder="Ingrese la tarifa">
+            <input type="text" class="form-control" id="tarifa" name="tarifa" placeholder="Ingrese la tarifa">
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>

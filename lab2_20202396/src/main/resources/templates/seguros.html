@@ -21,15 +21,15 @@
         <tbody>
         <tr th:each="seguro : ${seguros}">
             <td th:text="${seguro.empresaAseguradora}"></td>
-            <td th:number="${seguro.coberturaMaxima}"></td>
-            <td th:number="${seguro.tarifa}"></td>
+            <td th:text="${seguro.coberturaMaxima}"></td>
+            <td th:text="${seguro.tarifa}"></td>
             <td> <button type="button" class="btn btn-info"> Editar</button></td>
             <td> <button type="button" class="btn btn-danger"> Eliminar</button></td>
         </tr>
 
         </tbody>
     </table>
-    <a href="" type="button" class="btn btn-primary"> Agregar elemento </a>
+    <a href="/dodo/formSecure" type="button" class="btn btn-primary"> Agregar elemento </a>
 </div>
 
 

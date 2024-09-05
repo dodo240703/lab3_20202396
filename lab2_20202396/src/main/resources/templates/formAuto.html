@@ -24,8 +24,8 @@
         <div class="mb-3">
             <label for="sede" class="form-label">Sede</label>
             <select id="sede" name="sede">
-                <option>
-
+                <option th: th:each="sede : ${sedes}"
+                        th:value="${sede.direccion}">
                 </option>
 
             </select>
