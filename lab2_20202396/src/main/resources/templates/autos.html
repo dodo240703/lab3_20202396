@@ -13,6 +13,7 @@
             <tr>
                 <th>Modelo</th>
                 <th>Color</th>
+                <th>Kilometraje</th>
                 <th>Sede</th>
                 <th>Costo por día</th>
                 <th>Editar</th>
@@ -23,9 +24,9 @@
             <tr th:each="auto : ${autos}">
                 <td th:text="${auto.modelo}"></td>
                 <td th:text="${auto.color}"></td>
-                <td th:number="${auto.kilometraje}"></td>
-                <td th:int="${auto.sede}"></td>
-                <td th:number="${auto.costoDia}"></td>
+                <td th:text="${auto.kilometraje}"></td>
+                <td th:text="${auto.sede}"></td>
+                <td th:text="${auto.costoDia}"></td>
                 <td> <button type="button" class="btn btn-info"> Editar</button></td>
                 <td> <button type="button" class="btn btn-danger"> Eliminar</button></td>
             </tr>

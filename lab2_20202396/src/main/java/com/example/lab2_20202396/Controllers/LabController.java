@@ -34,7 +34,12 @@ public class LabController {
     }
 
     @GetMapping("/formCar")
-    public String formCars(){
+    public String formCars(Model model){
+        if (listaSedes.isEmpty()) {
+            listaSedes.add(new Sede(1568, "Sede Central","sede central"));
+            listaSedes.add(new Sede(2789, "Sede Sur","sede sur"));
+        }
+        model.addAttribute("sedes", listaSedes);
         return "formAuto";
     }
     @GetMapping("/formSedes")

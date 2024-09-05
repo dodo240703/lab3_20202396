@@ -10,12 +10,19 @@
     <h2 class="mb-4">Registro de sede</h2>
     <form th:action="@{/dodo/registrarSede}" method="post">
         <div class="mb-3">
+            <label for="idSede" class="form-label">Sede de id</label>
+            <input type="text" class="form-control" id="idSede" name="idSede" placeholder="Ingrese el id de la sede">
+        </div>
+        <div class="mb-3">
             <label for="distrito" class="form-label">Distrito</label>
             <input type="text" class="form-control" id="distrito" name="distrito" placeholder="Ingrese el distrito">
         </div>
         <div class="mb-3">
             <label for="direccion" class="form-label">Direeción</label>
             <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese el distrito">
+        </div>
+        <div>
+            <label></label>
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>

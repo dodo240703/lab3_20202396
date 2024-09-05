@@ -6,6 +6,11 @@ public class Sede {
     private String distrito;
     private String direccion;
 
+    public Sede(int idSede, String distrito, String direccion) {
+        this.idSede = idSede;
+        this.distrito = distrito;
+        this.direccion = direccion;
+    }
 
     public int getIdSede() {
         return idSede;
