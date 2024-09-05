@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Lista sedes uwu</title>
@@ -18,12 +18,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-
+        <tr th:each="sede : ${sedes}">
+            <td th:text="${sede.distrito}"></td>
+            <td th:text="${sede.direccion}"></td>
+            <td> <button type="button" class="btn btn-info"> Editar</button></td>
+            <td> <button type="button" class="btn btn-danger"> Eliminar </button></td>
         </tr>
         </tbody>
     </table>
-    <a href="" type="button" class="btn btn-primary"> Agregar elemento </a>
+    <a href="/dodo/formSedes" type="button" class="btn btn-primary"> Agregar elemento </a>
 </div>
 
 

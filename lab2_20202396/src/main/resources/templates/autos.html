@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Lista autos uwu</title>
@@ -20,12 +20,19 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-
+            <tr th:each="auto : ${autos}">
+                <td th:text="${auto.modelo}"></td>
+                <td th:text="${auto.color}"></td>
+                <td th:number="${auto.kilometraje}"></td>
+                <td th:int="${auto.sede}"></td>
+                <td th:number="${auto.costoDia}"></td>
+                <td> <button type="button" class="btn btn-info"> Editar</button></td>
+                <td> <button type="button" class="btn btn-danger"> Eliminar</button></td>
             </tr>
+
             </tbody>
         </table>
-        <a href="" type="button" class="btn btn-primary"> Agregar elemento </a>
+        <a href="/dodo/formCar" type="button" class="btn btn-primary"> Agregar elemento </a>
     </div>
 
 
