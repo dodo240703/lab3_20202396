@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario auto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Registro de auto</h2>
+    <form th:action="@{/dodo/registrar}" method="post">
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Ingrese el modelo del auto">
+        </div>
+        <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <input type="text" class="form-control" id="color" name="color" placeholder="Ingrese el modelo del auto">
+        </div>
+        <div class="mb-3">
+            <label for="kilometraje" class="form-label">Kilometraje</label>
+            <input type="number" class="form-control" id="kilometraje" name="kilometraje" placeholder="Ingrese el kilometraje">
+        </div>
+        <div class="mb-3">
+            <label for="sede" class="form-label">Sede</label>
+            <select id="sede" name="sede">
+                <option>
+
+                </option>
+
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="costoDia" class="form-label">Costo diario</label>
+            <input type="number" class="form-control" id="costoDia" name="costoDia" placeholder="Ingrese el costo de consumo diario">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+</div>
+</body>
+</html>

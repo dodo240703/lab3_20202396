@@ -6,7 +6,7 @@ public class Auto {
     private String modelo;
     private String color;
     private int kilometraje;
-    private String sede;
+    private int sede;
     private double costoDia;
 
     public int getIdAuto() {
@@ -41,11 +41,11 @@ public class Auto {
         this.kilometraje = kilometraje;
     }
 
-    public String getSede() {
+    public int getSede() {
         return sede;
     }
 
-    public void setSede(String sede) {
+    public void setSede(int sede) {
         this.sede = sede;
     }
 
