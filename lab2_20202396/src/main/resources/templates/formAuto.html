@@ -24,11 +24,12 @@
         <div class="mb-3">
             <label for="sede" class="form-label">Sede</label>
             <select id="sede" name="sede">
-                <option th: th:each="sede : ${sedes}"
-                        th:value="${sede.direccion}">
+                <option th:each="sede : ${sedes}"
+                        th:value="${sede.idSede}"
+                        th:text="${sede.direccion}">
                 </option>
-
             </select>
+
         </div>
         <div class="mb-3">
             <label for="costoDia" class="form-label">Costo diario</label>
